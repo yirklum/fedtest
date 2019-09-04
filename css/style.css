@@ -29,40 +29,22 @@
   
   body {
     color: #ffffff;
-    /* margin: auto; */
+    font-family: 'Open Sans';
+    text-align: left;
   }
   
   .bkg {
     width: 1454px;
     height: 1066px;
     /* background-image: linear-gradient(358deg, #ff5237, #b00391 43%, #412396); */
-
     background-image: linear-gradient(358deg, #9e0791, #781393);
 
   }
 
-  
-
-  
-  /* .container {
-    max-width: 100%;
-    height: auto;
-  } */
-  
   /******************************************
   /* LAYOUT
   /*******************************************/
   
-  /* Header */
-  
-  /* header {
-      width: 951px;
-  } */
-
-  /* .container {
-      margin-left: 127px;
-  }
-   */
   header {
     padding-top: 87px;
     margin-left: 127px;
@@ -72,19 +54,19 @@
   .title {
     width: 202px;
     height: 57px;
-    font-family: OpenSans;
     font-size: 42px;
-    text-align: left;
   }
 
   .intro {
     width: 951px;
     height: 72px;
-    font-family: OpenSans;
     font-size: 24px;
     line-height: 1.5;
-    text-align: left;
-    color: #ffffff;
+  }
+
+  .boxes {
+      margin-left: 140px;
+      width: 1200px;
   }
 
   .overlay {
@@ -92,28 +74,48 @@
     height: 560px;
     background-color: #412396;
     text-align: center;
-    vertical-align: middle;
-    font-family: OpenSans;
     font-size: 30px;
-    text-align: left;
+    display: inline-block;
   }
-  
-  .bkgbox {
+
+  #articles {
+    margin-top: 177px;
+    margin-bottom: 70px;
+    color: #412396;
+    background-color: #00ffd5;
+    /* height: 42px; */
+  }
+
+  #events {
+    color: #ffffff;
+    background-color: #412396;
+  }
+
+ #bkgboxarticles{
     width: 997px;
     height: 560px;
     box-shadow: 0 23px 23px 0 rgba(9, 9, 9, 0.08);
     border: solid 1px #f4f4f4;
     background-color: #ffffff;
     color: #000000;
-    /* position: relative; */
-    /* display: inline-block; */
+    display: block;
   }
 
-  .bkgbox img {
+  #bkgboxarticles img {
     width: 214px;
     height: 120px;
     margin-left: 72px;
     margin-right: 19px;
+  }
+
+  #bkboxevents {
+    width: 997px;
+    height: 560px;
+    box-shadow: 0 23px 23px 0 rgba(9, 9, 9, 0.08);
+    border: solid 1px #f4f4f4;
+    background-color: #ffffff;
+    color: #000000;
+    display: none;
   }
 
   .article {
@@ -123,30 +125,31 @@
   .articletitle {
     width: 458px;
     height: 33px;
-    font-family: OpenSans;
     font-size: 24px;
     font-weight: 600;
-    text-align: left;
     color: #412396;
   }
 
   .articletext {
     width: 514px;
     height: 78px;
-    font-family: OpenSans;
     font-size: 19px;
     line-height: 1.37;
-    text-align: left;
     color: #434a4c;
   }
+
 
   .bar {
     width: 487px;
     height: 86px;
     background-color: rgba(255, 255, 255, 0.18);
-    margin-right: 126px;
+    margin-right: 127px;
     float: right;
     margin-bottom: 98px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
   }
 
   .bar img {
@@ -158,5 +161,58 @@
     border-color: #412396;
     color: #ffffff;
     width: 187px;
-    height: 40px;
+    height: 42px;
+  }
+
+  .bigboxleft {
+    display: inline-block;
+    float: left;
+    width: 262px;
+    margin-left: 69px;
+  }
+  .bigbox {
+    display: inline-block;
+    float: left;
+    width: 262px;
+    margin-left: 35px;
+  }
+
+  .littlebox {
+      width: 262px;
+      height: 310px;
+      background-color: #eef1f2;
+      font-size: 19px;
+      line-height: 1.37;
+      letter-spacing: normal;
+      color: #434a4c;
+      padding: 23.5px;
+  }
+
+  .event-title {
+      background-color: #412396;
+      width: 262px;
+      height: 70px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 18px;
+      margin-top: 90px;
+  }
+
+  .upcoming {
+      color: #412396;
+      font-size: 24px;
+      font-weight: 600;
+      /* height: 33px; */
+  }
+
+  .littlebox button {
+    color: #412396;
+    background-color: #eef1f2;
+    text-align: center;
+    width: 202px;
+    height: 46px;
+    font-weight: 600;
+    margin-top: 8px;
   }

@@ -10,8 +10,14 @@
         <meta name="description" content="FED Test">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <link rel="stylesheet" href="css/reset.css">
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous" async defer></script>
+
     </head>
     <body>
         <div class="bkg">
@@ -24,26 +30,31 @@
                 <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </header>
 
-            <section class="container">
+            <section class="boxes">
                 <div class="row">
                     <div class="overlay">
-                        <button>
-                            <h2 class="articles">Articles</h2>
-                        </button>
-                        
-                        <button class="events">
-                            <h2>Events</h2>
-                        </button>
-                        
+                        <div>
+                            <button id="articles" onclick="turnOnArticles()">
+                                <h2>Articles</h2>
+                            </button>
+                        </div>
+             
+                        <div>
+                            <button id="events" onclick="turnOnEvents()">
+                                <h2>Events</h2>
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="bkgbox col">
+
+
+                    <div id="bkgboxarticles">
                         <div class="row article">
                             <img src="images/dog.png">
                         
                             <div class="articletext">
-                                <p class="articletitle">Article Title 1 Lorem Ipsum Dolor Sit</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <div class="articletitle">Article Title 1 Lorem Ipsum Dolor Sit</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
                     
@@ -51,8 +62,8 @@
                             <img src="images/kitten.png">
                             
                             <div class="articletext">
-                                <p class="articletitle">Article Title 2 Lorem Ipsum Dolor Sit</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <div class="articletitle">Article Title 2 Lorem Ipsum Dolor Sit</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
 
@@ -60,11 +71,75 @@
                             <img src="images/pig.png">
                             
                             <div class="articletext">
-                                <p class="articletitle">Article Title 3 Lorem Ipsum Dolor Sit</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <div class="articletitle">Article Title 3 Lorem Ipsum Dolor Sit</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
                     </div>    
+
+
+                    <div id="bkboxevents">
+     
+                        <div class="bigboxleft">
+                            <div class="event-title">
+                                01/12/17
+                            </div>
+
+                            <div class="littlebox">
+                                <div>
+                                    <span class="upcoming">Upcoming Event 1</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+
+                                <button>
+                                    VIEW EVENT
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="bigbox">
+                            <div class="event-title">
+                                01/17/17
+                            </div>
+
+                            <div class="littlebox">
+                                <div>
+                                    <span class="upcoming">Upcoming Event 2</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+            
+                                <button>
+                                    VIEW EVENT   
+                                </button>
+                            </div>    
+                        </div>
+
+                        <div class="bigbox">
+                            <div class="event-title">
+                                02/24/17
+                            </div>
+                            
+                            <div class="littlebox">
+                                <div>
+                                    <span class="upcoming">Upcoming Event 3</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+            
+                                <button>
+                                    VIEW EVENT
+                                </button> 
+                            </div>
+                        </div>
+                    </div>  
+                  
+
+
+
+
+
+
+
+
                 </div>
             </section>
 
@@ -79,6 +154,6 @@
         </div>    
 
         
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous" async defer></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
